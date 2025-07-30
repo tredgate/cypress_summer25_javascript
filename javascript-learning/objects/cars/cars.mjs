@@ -17,3 +17,12 @@ petrolCar.logCarProperties();
 petrolCar.color = "Bílá";
 dieselCar.logCarProperties(); // Červená barva
 petrolCar.logCarProperties(); // Bílá barva
+
+const electricCar = new CarBlueprint("Šedá", "EV 160kW", "elektřina", "Blesk");
+electricCar.logCarProperties();
+
+petrolCar.repaint("Černá");
+petrolCar.logCarProperties();
+
+const petrolCarColor = petrolCar.getColor();
+console.log("Barva Ropáku: " + petrolCarColor);

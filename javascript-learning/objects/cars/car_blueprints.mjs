@@ -21,4 +21,16 @@ export class CarBlueprint {
   logDivider() {
     console.log("-------------------------------");
   }
+
+  repaint(newColor) {
+    const oldCar = this.color;
+    this.color = newColor;
+    console.log(
+      `Auto ${this.carName} bylo přebarveno z ${oldCar} barvy na novou barvu: ${this.color}`
+    );
+  }
+
+  getColor() {
+    return this.color;
+  }
 }
